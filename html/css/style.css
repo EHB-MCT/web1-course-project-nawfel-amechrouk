@@ -19,13 +19,14 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
     background-color: var(--luffy-red);
     color: white;
     padding: 1.2rem 5%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;
 }
@@ -42,7 +43,7 @@ nav {
     color: var(--luffy-yellow);
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links {
@@ -72,6 +73,7 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 100;
 }
 
 .hamburger span {
@@ -88,25 +90,26 @@ main {
     padding: 0;
 }
 
+
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     height: 85vh;
     background-color: var(--ocean-blue);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/monkey1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/monkey1.jpg');
     background-size: cover;
-    background-position: center center;
-    padding: 0 5%;
+    background-position: center top;
+    padding: 0 5% 10vh 5%;
 }
 
 .hero h1 {
     font-size: 4.5rem;
     font-weight: 900;
     color: var(--luffy-yellow);
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 5px 5px 15px rgba(0,0,0,0.6);
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 5px 5px 15px rgba(0, 0, 0, 0.6);
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -117,7 +120,7 @@ main {
     font-weight: 600;
     color: white;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 footer {
@@ -130,10 +133,113 @@ footer {
     letter-spacing: 1px;
 }
 
+
+.avonturen-sectie {
+    padding: 4rem 5%;
+    background-color: var(--bg-light);
+}
+
+.avonturen-sectie h2 {
+    text-align: center;
+    color: var(--ocean-blue);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.intro-tekst {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-bottom: 5px solid var(--luffy-red);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: var(--luffy-red);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: var(--text-dark);
+}
+
+
+.vaardigheden-sectie {
+    padding: 4rem 5%;
+    background-color: var(--bg-light);
+    min-height: 75vh;
+}
+
+.vaardigheden-sectie h2 {
+    text-align: center;
+    color: var(--luffy-red);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: var(--ocean-blue);
+    color: white;
+    flex: 1 1 300px;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.skill-box h3 {
+    color: var(--luffy-yellow);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    background-color: var(--text-dark);
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        z-index: 100;
     }
 
     .nav-links {
@@ -147,12 +253,16 @@ footer {
         justify-content: center;
         align-items: center;
         transition: right 0.4s ease-in-out;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
         z-index: 99;
     }
 
     .nav-links.active {
-        right: 0; 
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0; 
     }
 
     .hero h1 {

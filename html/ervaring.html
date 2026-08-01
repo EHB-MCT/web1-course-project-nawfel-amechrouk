@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avonturen | Monkey D. Luffy</title>
+    <meta name="description"
+        content="Lees over de grootste avonturen van de Straw Hat Pirates, van East Blue tot Wano.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mugiwara</div>
+
+            <button class="hamburger" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ervaring.html">Avonturen</a></li>
+                <li><a href="vaardigheden.html">Vaardigheden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="avonturen-sectie">
+            <h2>Mijn Grootste Avonturen</h2>
+            <p class="intro-tekst">Als kapitein van de Straw Hat Pirates heb ik de hele Grand Line overgevaren. Hier
+                zijn een paar van mijn meest epische reizen!</p>
+
+            <div class="grid-container">
+
+                <article class="card">
+                    <h3>Alabasta</h3>
+                    <p>In het zand van Alabasta nam ik het op tegen Crocodile, een van de Warlords of the Sea. Alles om
+                        het koninkrijk van mijn vriendin Vivi te redden!</p>
+                </article>
+
+                <article class="card">
+                    <h3>Marineford</h3>
+                    <p>De ultieme oorlog. Ik brak in bij de zwaarbewaakte gevangenis Impel Down en vocht me een weg door
+                        de marinehoofdkwartieren om mijn broer Ace te redden.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Wano Country</h3>
+                    <p>Een episch gevecht in het land van de samoerai. Samen met mijn bondgenoten nam ik het op tegen
+                        Kaido, een van de Four Emperors, om Wano te bevrijden.</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Straw Hat Pirates. Geen mariniers toegestaan.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
