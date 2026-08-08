@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaardigheden | Monkey D. Luffy</title>
+    <meta name="description" content="Ontdek de krachten en vaardigheden van Monkey D. Luffy, inclusief zijn Devil Fruit en Haki.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mugiwara</div>
+            
+            <button class="hamburger" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ervaring.html">Avonturen</a></li>
+                <li><a href="vaardigheden.html">Vaardigheden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="vaardigheden-sectie">
+            <h2>Mijn Krachten</h2>
+            <p class="intro-tekst">Naast mijn onbreekbare wil heb ik door de jaren heen unieke vaardigheden ontwikkeld om de sterkste vijanden te verslaan.</p>
+            
+            <!-- Hergebruik van de Grid Container en Cards! -->
+            <div class="grid-container">
+                <article class="card">
+                    <h3>Gomu Gomu no Mi</h3>
+                    <p>Mijn lichaam is volledig van rubber! Hierdoor kan ik extreem ver uitrekken en ben ik immuun voor fysieke slagen en kogels.</p>
+                    <a href="gomu.html" class="btn-lees-meer">Meer info &rarr;</a>
+                </article>
+
+                <article class="card">
+                    <h3>Gears (2 t/m 5)</h3>
+                    <p>Speciale technieken waarbij ik mijn rubberen lichaam tot het uiterste dwing. Van extreme snelheid tot het buigen van de realiteit.</p>
+                    <a href="gears.html" class="btn-lees-meer">Meer info &rarr;</a>
+                </article>
+
+                <article class="card">
+                    <h3>Haki (3 Types)</h3>
+                    <p>Volledige beheersing over Armament, Observation en de extreem zeldzame Conqueror's Haki om de sterkste vijanden te domineren.</p>
+                    <a href="haki.html" class="btn-lees-meer">Meer info &rarr;</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Straw Hat Pirates. Geen mariniers toegestaan.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
