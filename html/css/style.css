@@ -157,11 +157,12 @@ footer {
 
 .avonturen-sectie h2 {
     text-align: center;
-    color: var(--luffy-red);
+    color: var(--luffy-yellow);
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -1px -1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .intro-tekst {
@@ -235,10 +236,14 @@ footer {
 }
 
 
-.vaardigheden-sectie {
-    padding: 4rem 5%;
-    background-color: var(--bg-light);
-    min-height: 75vh;
+.vaardigheden-sectie h2 {
+    text-align: center;
+    color: var(--luffy-yellow);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -1px -1px 3px rgba(0, 0, 0, 0.8);
 }
 main{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -254,19 +259,6 @@ main{
 .avonturen-sectie {
     background: transparent !important;
     
-}
-
-
-
-
-
-.vaardigheden-sectie h2 {
-    text-align: center;
-    color: var(--luffy-red);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 3rem;
 }
 
 .skills-container {
@@ -346,37 +338,37 @@ main{
 }
 
 .alabasta-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/alabasta.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/alabasta.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .marineford-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/marine.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/marine.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .wano-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/wano.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/wano.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .gomu-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/gomu.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/gomu.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .gears-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/gears.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/gears.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .haki-card {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/haki.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/haki.jpg');
     background-size: cover;
     background-position: center;
 }
