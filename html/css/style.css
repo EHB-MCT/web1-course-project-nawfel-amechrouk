@@ -20,6 +20,11 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    background-image: url('/images/monkey1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 header {
@@ -40,18 +45,19 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--luffy-yellow);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    text-decoration: none;S
+    text-decoration: none;
+    S
 }
 
 .logo-afbeelding {
-    height: 75px; 
+    height: 75px;
     width: auto;
     border-radius: 10px;
 }
@@ -166,6 +172,7 @@ footer {
     margin: 0 auto 3rem auto;
     font-size: 1.1rem;
     font-weight: 600;
+    color: #ffffff !important;
 }
 
 .grid-container {
@@ -180,14 +187,14 @@ footer {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid var(--luffy-red);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -227,6 +234,25 @@ footer {
     background-color: var(--bg-light);
     min-height: 75vh;
 }
+main{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/monkey1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+
+.vaardigheden-sectie, 
+.avonturen-sectie {
+    background: transparent !important;
+    
+}
+
+
+
+
 
 .vaardigheden-sectie h2 {
     text-align: center;
@@ -294,10 +320,48 @@ footer {
     }
 
     .nav-links li {
-        margin: 1.5rem 0; 
+        margin: 1.5rem 0;
     }
 
     .hero h1 {
         font-size: 2.8rem;
     }
+
+    .banner {
+        height: 60vh;
+        /* Maakt de banner een stuk hoger zodat zijn gezicht en handen zichtbaar zijn */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center top;
+        /* Zorgt dat de bovenkant en het midden van de foto goed zichtbaar zijn */
+        position: relative;
+        margin-bottom: 2rem;
+        border-bottom: 5px solid var(--luffy-red);
+    }
+
+    /* We halen het donkere laagje weg, zodat je foto lekker fel en helder blijft zoals op je screenshot */
+    .banner::after {
+        display: none;
+    }
+
+    /* De stijl van de titel: precies dezelfde rode kleur en dikke letters als je gewend bent, maar dan in het midden */
+    .banner h1 {
+        z-index: 1;
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: var(--luffy-red);
+        /* Dezelfde mooie rode kleur als je andere koppen */
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+        /* Een lichte lichte schaduw zodat hij mooi afsteekt tegen de foto */
+        background-color: rgba(255, 255, 255, 0.85);
+        /* Een subtiel wit achtergrondvlakje achter de tekst voor maximale leesbaarheid */
+        padding: 10px 30px;
+        border-radius: 8px;
+    }
+
+    
 }
