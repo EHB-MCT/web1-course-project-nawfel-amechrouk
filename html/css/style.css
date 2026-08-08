@@ -362,3 +362,21 @@ main{
     background-size: cover;
     background-position: center;
 }
+
+.gomu-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/gomu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.gears-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/gears.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.haki-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/haki.jpg');
+    background-size: cover;
+    background-position: center;
+}
