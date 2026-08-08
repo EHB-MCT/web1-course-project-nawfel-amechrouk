@@ -201,6 +201,14 @@ footer {
     color: var(--text-dark);
 }
 
+.card-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .btn-lees-meer {
     display: inline-block;
     margin-top: 1.5rem;
@@ -300,4 +308,33 @@ footer {
     .hero h1 {
         font-size: 2.8rem;
     }
+
+}
+
+.detail-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    border-bottom: 5px solid var(--luffy-red);
+}
+
+.alabasta-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/alabasta.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.marineford-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/marine.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.wano-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/wano.jpg');
+    background-size: cover;
+    background-position: center;
 }
