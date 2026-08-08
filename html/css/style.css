@@ -114,8 +114,6 @@ main {
     align-items: center;
     text-align: center;
     height: 85vh;
-    background-color: var(--ocean-blue);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/monkey1.jpg');
     background-size: cover;
     background-position: center top;
     padding: 0 5%;
@@ -243,7 +241,7 @@ footer {
     min-height: 75vh;
 }
 main{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/monkey1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
